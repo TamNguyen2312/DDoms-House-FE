@@ -1,0 +1,23 @@
+/* Ẩn bớt scrollbar mặc định nhưng vẫn scroll được */
+::-webkit-scrollbar {
+  width: 7px;   /* nhỏ khi không hover */
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.3); /* nhạt */
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+/* Khi hover vào vùng có scrollbar */
+:hover::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.7);
+  width: 15px; /* to hơn khi hover */
+}
